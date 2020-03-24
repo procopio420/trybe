@@ -1,0 +1,106 @@
+/*
+    BODY
+*/
+body {
+    background-color: black;
+}
+.container {
+    margin: 0 10%;
+    background-color: rgb(130, 130, 130);
+}
+/*
+    NAVBAR
+*/
+#navbar {
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+}
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-list-item {
+    float: left;
+    padding: 20px;
+}
+.navbar-list-item:hover {
+    background-color: rgb(130, 130, 130);
+    color: black;
+}
+.navbar-list-item:hover a{
+    color: black;
+}
+
+.navbar-list-item a {
+    text-decoration: none;
+    color: white;
+}
+/*
+    HEADER
+*/
+#header {
+    padding: 5% 0 17% 0;
+    text-align: center;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+/*
+    TABLE
+*/
+table, tr, th, td {
+    border: 1px solid black;
+}
+#table {
+    float: right;
+    margin-left: 15px;
+}
+.table-title {
+    text-align: left;
+}
+/*
+    ARTICLE
+*/
+.article-section {
+    margin: 10px 0;
+}
+#article {
+    width: 50%;
+    margin-left: 35px;
+}
+.article-image {
+    height: 150px;
+    width: 150px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.article-subtitle {
+    font-size: px;
+}
+/*
+    ASIDE
+*/
+#aside {
+    margin-left: 35px;
+    float: right;
+    width: 45%;
+}
+/*
+    FOOTER
+*/
+#footer {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+}
+#footer p {
+    padding: 10px 0;
+    color: white;
+}
