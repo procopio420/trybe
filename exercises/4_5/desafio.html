@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio Gordinho</title>
+    </head>
+    <body>
+        <ul id="lista">
+
+        </ul>
+    </body>
+    <script>
+        let array = ["RL", "Gordinho", "Lu", "Cremoso", "Amandinha", "Tulinácio", "Cyrilove", "Robin"];
+        let lista = document.getElementById('lista');
+        for(i in array){
+            let elemento = document.createElement("li");
+            elemento.innerHTML=array[i];
+            lista.appendChild(elemento);
+        }
+    </script>
+</html>
+
+
