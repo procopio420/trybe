@@ -1,0 +1,187 @@
+body {
+  font-family: 'Baloo Da 2' , cursive;
+  background-color: rgb(229 , 70 , 14);
+  color: white;
+}
+
+.lado-direito {
+  float: right;
+  width: 75%;
+}
+
+.lado-esquerdo {
+  width: 20%;
+  clear: both;
+  float: left;
+}
+
+#content-wrap {
+  padding-bottom: 100px;
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+}
+
+.navmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(51 , 51 , 51);
+  left: 0;
+}
+
+.navitem {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 15px 2%;
+  text-decoration: none;
+}
+
+.navitem:hover {
+  background-color: rgb(17 , 17 , 17);
+}
+
+#cabecalho {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.hero {
+  background-image: url('img/bg-header.jpg');
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  color: white;
+  font-size: 64px;
+  background-color: rgba(0 , 0 , 0 , 0.25);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#aside {
+  width: 100%;
+  border: 2px white solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: 1% 1% 0 0;
+}
+
+.aside-title {
+  font-size: 30px;
+}
+
+.table {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+td {
+  padding: 1% 5%;
+  border: 2px solid white;
+}
+
+#article {
+  width: 100%;
+}
+
+#important-info {
+  display: flexbox;
+  background-color: rgb(229 , 70 , 14);
+  border: 2px white solid;
+  border-radius: 10px;
+  margin: 1% 0 0;
+  text-align: center;
+}
+
+#map-info {
+  margin: 5% auto;
+  padding: 5% 0;
+}
+
+.map-container {
+  width: 65%;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.map {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.list-container {
+  width: 25%;
+  padding: 1%;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.article-list {
+  margin: 0 0 5%;
+}
+
+.article-title {
+  text-align: center;
+}
+
+.news-img {
+  width: 300px;
+  height: auto;
+  margin-right: 25px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.news-list-item {
+  background-color: rgba(0 , 0 , 0 , 0.25);
+  margin: 2% 0;
+  padding: 1%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.news-title {
+  color: white;
+}
+
+.news-text {
+  color: white;
+}
+
+.news-link {
+  text-decoration: none;
+}
+
+#rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(51 , 51 , 51);
+  left: 0;
+  text-align: center;
+}
+
+#rodape p {
+  color: white;
+}
