@@ -1,27 +1,61 @@
 .meme-image-container {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0,0,0);
-    height: 750px;
+    height: 700px;
     margin-top: 15px;
     position: relative;
-    width: 750px;
+    width: 800px;
+    border-radius: 5px;
 }
 
 .meme-image {
-    height: 750px;
+    height: 700px;
     visibility: visible;
-    width: 750px;
+    width: 800px;
 }
 
 .meme-text {
     color: yellow;
     font-family: Arial;
-    font-size: 42px;
+    font-size: 39px;
     font-weight: bolder;
     position: absolute;
     text-align: center;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    top: 75%;
+    top: 85%;
     width: 100%;
     word-break: break-all;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+}
+
+button {
+    margin: 0 10px;
+    padding: 0.5% 1%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+body {
+    background-color: lightgreen;
 }
