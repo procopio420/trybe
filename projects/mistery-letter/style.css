@@ -20,17 +20,17 @@
 }
 
 .medium {
-  font-size: 20px;
+  font-size: 40px;
   padding: 8px;
 }
 
 .big {
-  font-size: 30px;
+  font-size: 60px;
   padding: 10px;
 }
 
 .reallybig {
-  font-size: 40px;
+  font-size: 80px;
   padding: 15px;
 }
 
@@ -64,4 +64,17 @@
   display: flex;
   justify-content: center;
   margin-top: 5%;
+}
+
+body {
+  background-color: #777;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+span {
+  margin: 0 10px;
 }
