@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="lib/justValidateTooltip.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <br><br>
+    <h1 class="text-center text-white font-weight-bold">Currículo Maker</h1>
+    <br><br>
+    <form id='form' class='text-white' action="" method="POST">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="input_name">Nome:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="name" class="form-control" type="text" name="name" id="input_name"
+                maxlength="40" required placeholder="Digite seu nome">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input_email">Email:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="email" class="form-control" type="text" name="email" id="input_email"
+                maxlength="50" required placeholder="Digite seu email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input_cpf">CPF:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="required" class="form-control" type="text" name="cpf" id="input_cpf"
+                maxlength="11" required placeholder="Digite seu CPF">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input_city">Cidade:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="required2" class="form-control" type="text" name="city" id="input_city"
+                maxlength="28" required placeholder="Digite sua cidade">
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="input_state">Estado:</label>
+            <div class="just-validate-tooltip-container">
+              <select data-validate-field="select" class="form-control" name="state" id="input_state" required>
+                <option value="">Selecione seu estado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo: </label>
+            <div class="just-validate-tooltip-container">
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="input_type_house"><input data-validate-field="radio" required
+                    class="form-check-input" type="radio" name="type" id="input_type_house" value="Casa">Casa</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="input_type_apartment"><input data-validate-field="radio" required
+                    class="form-check-input" type="radio" name="type" id="input_type_apartment"
+                    value="Apartamento">Apartamento</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="input_resume">Resumo:</label>
+            <div class="just-validate-tooltip-container">
+              <textarea data-validate-field="required3" class="form-control" name="resume" id="input_resume" cols="30"
+                rows="5" maxlength="1000" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input_role">Cargo:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="required4" class="form-control" type="text" name="role" id="input_role"
+                maxlength="40" required placeholder="Digite seu cargo">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input_description">Descrição do cargo:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="required5" class="form-control" type="text" name="description"
+                id="input_description" maxlength="40" required placeholder="Digite a descrição do cargo">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input_date">Data de início:</label>
+            <div class="just-validate-tooltip-container">
+              <input data-validate-field="required6" autocomplete="off" class="form-control" type="text" name="date"
+                id="input_date" maxlength="10" required placeholder="dd/mm/aaaa">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br><br>
+      <div class="row justify-content-center">
+        <button class="btn btn-light" id="btn_submit">Novo currículo</button>
+      </div>
+    </form>
+    <br>
+    <div class="row justify-content-center">
+      <button class="btn btn-light" id="btn_clean">Limpar</button>
+    </div>
+    <br><br><br>
+    <div id="cv">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Dados Pessoais:</h5>
+          <p class="card-text" id="cv-name"></p>
+          <p class="card-text" id="cv-email"></p>
+          <p class="card-text" id="cv-cpf"></p>
+        </div>
+        <hr>
+        <div class="card-body">
+          <h5 class="card-title">Endereço:</h5>
+          <p class="card-text" id="cv-city"></p>
+          <p class="card-text" id="cv-state"></p>
+          <p class="card-text" id="cv-type"></p>
+        </div>
+        <hr>
+        <div class="card-body">
+          <h5 class="card-title">Resumo profissional:</h5>
+          <p class="card-text" id="cv-resume"></p>
+        </div>
+        <hr>
+        <div class="card-body">
+          <h5 class="card-title">Última experiência profissional:</h5>
+          <p class="card-text" id="cv-role"></p>
+          <p class="card-text" id="cv-description"></p>
+          <p class="card-text" id="cv-date"></p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+  <script src="lib/moment.js"></script>
+  <script src="lib/just-validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
