@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - entre ou cadastre-se</title>
+
+    <link rel="icon" href="./imgs/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="top-bar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img class="logo-img facebook-logo" src="imgs/facebook-logo.png" width="200px" alt="">
+            </div>
+            <div class="login-container">
+                <form action="" method="POST" id="login-form">
+                    <div class="form-row align-items-center">
+                        <div class="col-5">
+                            <label class="login-label" for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+                        </div>
+                        <div class="col-5">
+                            <label class="login-label" for="user-password" id="user-password-label">Senha</label>
+                        </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col-5">
+                            <input type="text" class="form-control form-control-sm input-custom" id="user-email-phone">
+                            <small>&nbsp;</small>
+                        </div>
+                        <div class="col-5">
+                            <input type="password" class="form-control form-control-sm input-custom" id="user-password">
+                            <small>
+                <a class="login-link" href="#">Esqueceu a conta?</a>
+              </small>
+                        </div>
+                        <div class="col-2">
+                            <button type="submit" id="button-login" class="btn btn-sm btn-primary btn-custom">Entrar</button>
+                            <small>&nbsp;</small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="main-content" class="main-content">
+        <div class="main-container">
+            <div class="welcome-container">
+                <div class="welcome-text">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</div>
+                <img id="facebook-networking" class="img-fluid welcome-img" src="./imgs/networking.png" alt="">
+            </div>
+            <div class="signup-container">
+                <div class="signup-text-container">
+                    <div class="signup-title">
+                        Abra uma conta
+                    </div>
+                    <div class="signup-text">
+                        É rápido e fácil.
+                    </div>
+                </div>
+                <div class="signup-form-container">
+                    <form action="" method="POST" id="register-form" novalidate>
+                        <div class="form-row form-row-custom">
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="name" placeholder="Nome" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="surname" placeholder="Sobrenome" required>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-custom">
+                            <div class="col">
+                                <input type="text" class="form-control" id="email" placeholder="Celular ou email" required>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-custom">
+                            <div class="col">
+                                <input type="password" class="form-control" autocomplete="off" id="password" placeholder="Nova senha" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-title-custom">Data de nascimento</div>
+                                <input style="width: 55%;" placeholder="dd/mm/aaaa" autocomplete="off" type="text" class="form-control" id="date" placeholder="Nova senha" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-title-custom">Gênero</div>
+                                <div class="form-check form-check-inline form-radio-custom-container">
+                                    <input class="form-check-input" type="radio" name="sexo" id="radioFem" value="Feminino">
+                                    <label class="form-check-label form-radio-label-custom" for="radioFem">Feminino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="radioMas" value="Masculino">
+                                    <label class="form-check-label" for="radioMas">Masculino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="radioPer" value="Personalizado">
+                                    <label class="form-check-label" for="radioPer">Personalizado</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="add-info-container">
+                                    <small class="form-add-info-custom">Ao clicar em Cadastre-se, você concorda com nossos <a
+                      href="#">Termos</a>, <a href="#">Política de Dados</a> e <a href="#">Política de
+                      Cookies</a>.
+                    Você pode receber notificações por SMS e pode cancelar isso quando quiser.</small>
+                                </div>
+                                <button id="facebook-register" class="btn btn-primary btn-register-custom" type="submit">Cadastre-se</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="page-text-custom"><a href="#">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer-container">
+                <a href="#">Português (Brasil)</a>
+                <a href="#">English (US)</a>
+                <a href="#">Español</a>
+                <a href="#">Français (France)</a>
+                <a href="#">Italiano</a>
+                <a href="#">العربية</a>
+                <a href="#">Deutsch</a>
+                <a href="#">हिन्दी</a>
+                <a href="#">中文(简体)</a>
+                <a href="#">日本語</a>
+                <hr>
+                <a href="#">Cadastre-se</a>
+                <a href="#">Entrar</a>
+                <a href="#">Messenger</a>
+                <a href="#">Facebook Lite</a>
+                <a href="#">Watch</a>
+                <a href="#">Pessoas</a>
+                <a href="#">Páginas</a>
+                <a href="#">Categorias de Página</a>
+                <a href="#">Locais</a>
+                <a href="#">Jogos</a>
+                <a href="#">Locais</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Grupos</a>
+                <a href="#">Instagram</a>
+                <a href="#">Local</a>
+                <a href="#">Campanhas</a>
+                <a href="#">Serviços</a>
+                <a href="#">Sobre</a>
+                <a href="#">Criar anúncio</a>
+                <a href="#">Criar Página</a>
+                <a href="#">Desenvolvedores</a>
+                <a href="#">Carreiras</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Opções de anúncio</a>
+                <a href="#">Termos</a>
+                <a href="#">Ajuda</a>
+                <br>
+                <p class="copyright">Facebook © 2020</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const pikaday = new Pikaday({
+            field: document.getElementById('date'),
+            format: 'DD/MM/YYYY',
+            toString(date) {
+                const day = date.getDate();
+                const month = date.getMonth() + 1;
+                const year = date.getFullYear();
+
+                let sDay = day.toString();
+                if (day < 10) sDay = `0${sDay}`;
+                let sMonth = month.toString();
+                if (month < 10) sMonth = `0${sMonth}`;
+
+                return `${sDay}/${sMonth}/${year}`;
+            },
+        });
+
+    </script>
+</body>
+
+</html>
