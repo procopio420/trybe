@@ -23,7 +23,7 @@ thanks for sharing with us! :)
 - [x] 3-2: *HTML & CSS - Getting Started with CSS*
 - [x] 3-3: *HTML & CSS - Selectors and positioning*
 - [x] 3-4: *Semantic HTML*
-- [x] 3-5: *[Project - HTML & CSS](https://deboracosilveira.github.io/dog-page/)*
+- [x] 3-5: *[Project - HTML & CSS]()*
 ##### Block 4: Introduction - JavaScript
 - [x] 4-1: *JavaScript - Getting Started*
 - [x] 4-2: *JavaScript - For Array and Loop*
@@ -34,11 +34,11 @@ thanks for sharing with us! :)
 - [x] 4-7: *JavaScript - Events*
 - [x] 4-8: *JavaScript - Web Storage*
 ##### Block 5: Introduction - JavaScript - Projects
-- [x] 5-1: *[Project - Meme Generator](https://deboracosilveira.github.io/meme-generator/)*
-- [x] 5-2: *[Project - Art with Pixels](https://deboracosilveira.github.io/pixels-art/)*
+- [x] 5-1: *[Project - Meme Generator]()*
+- [x] 5-2: *[Project - Art with Pixels]()*
 - [x] 5-3: *[Project - Task List]()*
-- [x] 5-4: *[Project - Guess the Color](https://deboracosilveira.github.io/color-guess/)*
-- [x] 5-5: *[Project - Mysterious Card](https://deboracosilveira.github.io/mistery-letter/)*
+- [x] 5-4: *[Project - Guess the Color]()*
+- [x] 5-5: *[Project - Mysterious Card]()*
 ​
 ## Front-end development :hourglass_flowing_sand:
 ##### Block 6: Introduction - Front-end
@@ -46,12 +46,12 @@ thanks for sharing with us! :)
 - [x] 6-2: *JavaScript libraries and CSS frameworks*
 - [x] 6-3: *CSS Flexbox - Part 1*
 - [x] 6-4: *CSS Flexbox - Part 2*
-- [x] 6-5: *[Project - Facebook home](https://deboracosilveira.github.io/facebook/)*
+- [x] 6-5: *[Project - Facebook home]()*
 ##### Block 7: Introduction - Responsiveness & Animations with CSS
 - [x] 7-1: *Responsive CSS - Mobile First*
 - [x] 7-2: *CSS animations - Part 1*
 - [x] 7-3: *CSS animations - Part 2*
-- [x] 7-4: *[Project - The Daily Prophet](https://deboracosilveira.github.io/daily-prophet/)*
+- [x] 7-4: *[Project - The Daily Prophet]()*
 ##### Block 8: JavaScript ES6 & Unit Tests
 - [x] 8-1: *JavaScript ES6 - let, const, arrow functions and template literals*
 - [x] 8-2: *JavaScript ES6 - Objects*
