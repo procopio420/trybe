@@ -9,11 +9,9 @@ const arrayFunction = async () => {
     if (squareSum > 8000) {
       throw new Error();
     }
-    const divArray = [];
-    divArray.push(squareSum / 2);
-    divArray.push(squareSum / 3);
-    divArray.push(squareSum / 5);
-    divArray.push(squareSum / 10);
+    const divisores = [2, 3, 5, 10];
+    const divArray = divisores.map((el) => squareSum / el);
+
     return divArray;
   } catch (err) {
     return err;
