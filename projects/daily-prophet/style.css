@@ -202,7 +202,7 @@ article hr {
   }
 }
 
-@media screen and ( max-width : 760px ) {
+/* @media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -221,4 +221,4 @@ article hr {
   .container-orientation {
     border: 1px solid red;
   }
-}
+} */
