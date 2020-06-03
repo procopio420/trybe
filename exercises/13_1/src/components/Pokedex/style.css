@@ -1,0 +1,9 @@
+.pokedex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  min-height: 100%;
+}
